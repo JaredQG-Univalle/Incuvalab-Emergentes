@@ -1,0 +1,163 @@
+const stories = [
+    {
+      id: 1,
+      title: "Building a Sustainable Fashion Brand from Scratch",
+      excerpt:
+        "How Carlos turned his passion for sustainable fashion into a thriving business that's changing industry standards.",
+      image: "/placeholder.svg?height=400&width=600",
+      author: {
+        name: "Carlos Mendez",
+        avatar: "/placeholder.svg?height=100&width=100",
+        role: "Entrepreneur, Class of 2019",
+      },
+      platform: "YouTube",
+      date: "March 15, 2023",
+    },
+    {
+      id: 2,
+      title: "From Failure to Funding: A Startup Journey",
+      excerpt:
+        "After three failed attempts, Sofia's health tech startup finally secured $2M in funding. Here's what she learned.",
+      image: "/placeholder.svg?height=400&width=600",
+      author: {
+        name: "Sofia Chen",
+        avatar: "/placeholder.svg?height=100&width=100",
+        role: "Founder, Class of 2017",
+      },
+      platform: "Incuvacast",
+      date: "January 22, 2023",
+    },
+    {
+      id: 3,
+      title: "Revolutionizing Education Through AI",
+      excerpt: "How a team of students developed an AI tool that's now being used in schools across the country.",
+      image: "/placeholder.svg?height=400&width=600",
+      author: {
+        name: "Alex Johnson",
+        avatar: "/placeholder.svg?height=100&width=100",
+        role: "Tech Lead, Class of 2020",
+      },
+      platform: "Facebook",
+      date: "November 8, 2022",
+    },
+    {
+      id: 4,
+      title: "Creating Social Impact Through Design",
+      excerpt: "How Priya's design thinking approach is helping solve community challenges in urban areas.",
+      image: "/placeholder.svg?height=400&width=600",
+      author: {
+        name: "Priya Patel",
+        avatar: "/placeholder.svg?height=100&width=100",
+        role: "Designer, Class of 2021",
+      },
+      platform: "YouTube",
+      date: "February 3, 2023",
+    },
+    {
+      id: 5,
+      title: "The Journey to Building a Million-Dollar App",
+      excerpt: "From a weekend project to a million-dollar acquisition, David shares his entrepreneurial journey.",
+      image: "/placeholder.svg?height=400&width=600",
+      author: {
+        name: "David Kim",
+        avatar: "/placeholder.svg?height=100&width=100",
+        role: "Developer, Class of 2018",
+      },
+      platform: "Incuvacast",
+      date: "April 17, 2023",
+    },
+    {
+      id: 6,
+      title: "Turning Research into Real-World Solutions",
+      excerpt: "How Amara's academic research became the foundation for a solution that's improving healthcare access.",
+      image: "/placeholder.svg?height=400&width=600",
+      author: {
+        name: "Amara Okafor",
+        avatar: "/placeholder.svg?height=100&width=100",
+        role: "Researcher, Class of 2016",
+      },
+      platform: "Facebook",
+      date: "May 29, 2023",
+    },
+    {
+      id: 7,
+      title: "Sustainable Architecture for Urban Communities",
+      excerpt: "How a team of architecture students designed affordable, eco-friendly housing solutions.",
+      image: "/placeholder.svg?height=400&width=600",
+      author: {
+        name: "James Wilson",
+        avatar: "/placeholder.svg?height=100&width=100",
+        role: "Architect, Class of 2019",
+      },
+      platform: "YouTube",
+      date: "June 12, 2023",
+    },
+    {
+      id: 8,
+      title: "Revolutionizing Healthcare with AI Diagnostics",
+      excerpt: "A medical student's journey to creating an AI tool that helps doctors diagnose rare diseases.",
+      image: "/placeholder.svg?height=400&width=600",
+      author: {
+        name: "Sarah Lee",
+        avatar: "/placeholder.svg?height=100&width=100",
+        role: "Medical Researcher, Class of 2020",
+      },
+      platform: "Incuvacast",
+      date: "July 5, 2023",
+    },
+    {
+      id: 9,
+      title: "Building Community Through Food Innovation",
+      excerpt: "How a culinary arts student created a platform connecting local farmers with urban consumers.",
+      image: "/placeholder.svg?height=400&width=600",
+      author: {
+        name: "Miguel Hernandez",
+        avatar: "/placeholder.svg?height=100&width=100",
+        role: "Food Entrepreneur, Class of 2018",
+      },
+      platform: "Facebook",
+      date: "August 18, 2023",
+    },
+    {
+      id: 10,
+      title: "Transforming Education in Rural Areas",
+      excerpt: "An education major's innovative approach to bringing quality education to remote communities.",
+      image: "/placeholder.svg?height=400&width=600",
+      author: {
+        name: "Emily Thompson",
+        avatar: "/placeholder.svg?height=100&width=100",
+        role: "Educator, Class of 2017",
+      },
+      platform: "YouTube",
+      date: "September 3, 2023",
+    },
+    {
+      id: 11,
+      title: "Renewable Energy Solutions for Developing Nations",
+      excerpt: "How an engineering student's solar project is bringing electricity to off-grid communities.",
+      image: "/placeholder.svg?height=400&width=600",
+      author: {
+        name: "Daniel Osei",
+        avatar: "/placeholder.svg?height=100&width=100",
+        role: "Engineer, Class of 2019",
+      },
+      platform: "Incuvacast",
+      date: "October 22, 2023",
+    },
+    {
+      id: 12,
+      title: "Mental Health Innovation for College Students",
+      excerpt: "A psychology graduate's app that's helping thousands of students manage stress and anxiety.",
+      image: "/placeholder.svg?height=400&width=600",
+      author: {
+        name: "Aisha Khan",
+        avatar: "/placeholder.svg?height=100&width=100",
+        role: "Psychologist, Class of 2020",
+      },
+      platform: "Facebook",
+      date: "November 14, 2023",
+    },
+  ];
+  
+  export default stories;
+  

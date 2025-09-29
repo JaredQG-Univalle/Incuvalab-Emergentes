@@ -1,0 +1,163 @@
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+
+.tinder-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+}
+
+.tinder-card {
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  margin-bottom: 1rem;
+  background-color: white;
+  border-radius: 12px;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #222;
+}
+
+.tinder-card * {
+  color: #222 !important;
+}
+
+.tinder-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 400px;
+}
+
+.like-btn,
+.dislike-btn {
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.like-btn:hover {
+  border-color: green;
+  transform: scale(1.1);
+}
+
+.dislike-btn:hover {
+  border-color: red;
+  transform: scale(1.1);
+}
+
+.background-decor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    #880038 0%,
+    #a00e52 25%,
+    #6f497b 50%,
+    #48668b 75%,
+    #3a8ca0 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.view-matches-btn {
+  margin-bottom: 1rem;
+  background-color: #880043;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.image-wrapper {
+  position: relative;
+  width: calc(100% + 2rem); /* se expande más allá del padding */
+  height: 220px; /* ajustable a tu gusto */
+  margin-left: -1rem;
+  margin-right: -1rem;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #880043;
+  color: white !important;
+  font-size: 0.75rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.image-multi-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-multi-preview img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card-image-container {
+  width: 100%;
+  height: 200px; 
+  margin: 0 auto 1rem auto; 
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}

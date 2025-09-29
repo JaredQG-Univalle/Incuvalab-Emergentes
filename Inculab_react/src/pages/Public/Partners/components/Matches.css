@@ -1,0 +1,221 @@
+.matches-list-crud {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.matches-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.match-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.match-card-crud {
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.match-card-crud:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.profile-image[src*="caduceo"],
+.profile-image[src*="medical"],
+.profile-image[src*="medicina"] {
+  max-width: 80%;
+  max-height: 80%;
+  width: auto;
+  height: auto;
+  padding: 30px;
+}
+
+.profile-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: linear-gradient(135deg, #880043 0%, #a61e69 100%);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(136, 0, 67, 0.3);
+  border: 2px solid white;
+}
+
+.profile-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 4px;
+}
+
+.project-name {
+  font-size: 16px;
+  color: #7f8c8d;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  color: #5a6c7d;
+  font-size: 14px;
+}
+
+.icon-inline {
+  width: 16px;
+  height: 16px;
+  color: #880043;
+  flex-shrink: 0;
+}
+
+.profile-content p {
+  margin: 12px 0;
+  color: #5a6c7d;
+  font-size: 14px;
+}
+
+.match-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.reunion-btn,
+.chat-btn,
+.delete-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.reunion-btn {
+  background: linear-gradient(135deg, #0078D7 0%, #106ebe 100%);
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 120, 215, 0.3);
+}
+
+.reunion-btn:hover {
+  background: linear-gradient(135deg, #106ebe 0%, #005A9E 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 120, 215, 0.4);
+}
+
+.chat-btn {
+  background: linear-gradient(135deg, #25D366 0%, #20b358 100%);
+  color: white;
+  box-shadow: 0 2px 8px rgba(37, 211, 102, 0.3);
+}
+
+.chat-btn:hover {
+  background: linear-gradient(135deg, #20b358 0%, #1DA851 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+}
+
+.delete-btn {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  color: white;
+  box-shadow: 0 2px 8px rgba(231, 76, 60, 0.3);
+}
+
+.delete-btn:hover {
+  background: linear-gradient(135deg, #c0392b 0%, #a93226 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.4);
+}
+
+.button-icon {
+  flex-shrink: 0;
+  display: block;
+}
+
+.no-matches {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 16px;
+  margin-top: 40px;
+  padding: 40px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 2px dashed #dee2e6;
+}
+
+@media (max-width: 768px) {
+  .match-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .matches-list-crud {
+    padding: 16px;
+  }
+
+  .profile-content {
+    padding: 16px;
+  }
+
+  .match-buttons {
+    gap: 10px;
+  }
+}
