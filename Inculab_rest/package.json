@@ -1,10 +1,6 @@
 {
   "name": "server_rest",
   "version": "1.0.0",
-  "main": "index.js",
-  "author": "jardal",
-  "license": "ISC",
-  "description": "",
   "type": "module",
   "scripts": {
     "dev": "nodemon index.js",
@@ -22,8 +18,12 @@
     "helmet": "^7.0.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.14.0",
-    "multer": "^1.4.5-lts.1",
-    "nodemon": "^3.0.1",
-    "postcss-nesting": "^13.0.1"
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
