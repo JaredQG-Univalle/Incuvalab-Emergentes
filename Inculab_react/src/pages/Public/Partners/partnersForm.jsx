@@ -269,7 +269,7 @@ export default function PartnersForm() {
         },
       };
  
-      const api = "https://incuvalab-285834318620.us-central1.run.app";
+      const api = "https://incuvalab-emergentes-1.onrender.com";
       const response = await fetch(`${api}/proyectos/create`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },

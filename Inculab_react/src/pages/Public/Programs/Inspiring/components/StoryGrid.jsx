@@ -10,7 +10,7 @@ const StoryGrid = ({ platformFilter = "all", limit }) => {
     async function fetchCasos() {
       try {
         const host = window.location.hostname; 
-        const api = `https://incuvalab-285834318620.us-central1.run.app`;
+        const api = `https://incuvalab-emergentes-1.onrender.com`;
         const response = await axios.post(`${api}/casos/list`, { query: {} });
         const list = response?.data?.list || [];
         setCasos(list);
